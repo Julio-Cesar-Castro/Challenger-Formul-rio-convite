@@ -179,6 +179,7 @@ body {
       background-color: var(--shape-button);
       position: relative;
       border-radius: 50%;
+      cursor: pointer;
       }
 
       & .color-container:hover{
@@ -193,7 +194,7 @@ body {
 
  & .theme-wrapper {
   margin-top: 16px;
-    grid-template-columns: repeat(4, auto);
+  grid-template-columns: repeat(4, auto);
 
     & .theme-card {
       width: 8.25rem;
@@ -216,3 +217,51 @@ body {
     }
   }
 }
+
+.input-wrapper-style {
+  margin-top: 1.75rem;
+  
+  & div:nth-child(1){
+    width: 30%;
+  }
+
+  & div:nth-child(2){
+    span {
+      font: var(--body-xs);
+      color: var(text-heading);
+    }
+  }
+
+  & div:nth-child(3){
+    width: 100%;
+  }
+
+  & .container-label-file {
+    & p {
+      font: var(--body-sm);
+      color: var(--input-placeholder);
+    }
+  }
+
+  & .label-file{
+  margin-top: 8px;
+  width: 7.4375rem;
+  height: 2.5rem;
+  border-radius: 0.25rem;
+  background-color: var(--shape-button); 
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-heading);
+  cursor: pointer;
+  font: var(--body-xs);
+
+    & img {
+      width: 1rem;
+      height: 1rem;
+    }
+
+  }
+}
+

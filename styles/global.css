@@ -54,3 +54,20 @@ html {
 a {
   text-decoration: none;
 }
+
+.container-form::-webkit-scrollbar {
+  width: 0.25rem;
+  border-radius: 50%;   
+}
+
+.container-form::-webkit-scrollbar-track {
+  background: var(--shape-button);
+  border-top-left-radius: 1.5rem;   
+  border-bottom-left-radius: 1.5rem;  
+}
+
+.container-form::-webkit-scrollbar-thumb {
+  background-color: #C8CDD0; 
+  border-top-left-radius: 1.5rem;   
+  border-bottom-left-radius: 1.5rem;  
+}

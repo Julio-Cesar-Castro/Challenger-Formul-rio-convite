@@ -21,7 +21,7 @@ input[type="date"]::-webkit-calendar-picker-indicator{
   opacity: 0;
 }
 
-input[type="radio"]:focus{
+#online:focus,#presential:focus{
   background-color: var(--shape-hover);
   width: 100%;
   height: 100%;
@@ -67,3 +67,48 @@ input[type="color"]::-webkit-color-swatch-wrapper {
 input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
+
+input[type="checkbox"]{
+  all: unset;
+  border: var(--input-stroke) solid 1px;
+  width: 4rem;
+  height: 2rem;
+  border-radius: 999px;
+  background-color: var(--input-base);
+  position: relative;
+  cursor: pointer;
+  transition: background-color .5s 50ms ease-in-out;
+
+  &:not(:checked)::before{
+    content: "";
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--input-stroke);
+    position: absolute;
+    top: 4px;
+    bottom: 4px;
+    left: 4px;
+  }
+
+  &:checked{
+    background-color: var(--brand-ligh);
+
+    &::after {
+      content:"";
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: white;
+      border-radius: 50%;
+      position: absolute;
+      top: 4px;
+      right: 4px;
+      bottom: 4px;
+    }
+  }
+}
+
+input[type="file"]{
+  display: none;
+}
+
