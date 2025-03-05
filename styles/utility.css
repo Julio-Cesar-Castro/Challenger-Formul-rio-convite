@@ -43,6 +43,10 @@
   align-items: center;
 }
 
+.justify-center{
+  justify-items: center;
+}
+
 .column {
   flex-direction: column;
 }

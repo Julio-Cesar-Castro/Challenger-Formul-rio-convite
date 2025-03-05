@@ -45,3 +45,25 @@ textarea {
 textarea:focus {
   outline: 1px solid var(--brand-ligh);
 }
+
+input[type="color"]{
+  all: unset;
+  cursor: pointer; 
+  width: 1.75rem;
+  height: 1.75rem;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
