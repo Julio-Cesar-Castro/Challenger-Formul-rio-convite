@@ -1,0 +1,169 @@
+body {
+  max-width: 1280px;
+  width: 100%;
+  margin-inline: auto;
+  overflow-y: hidden;
+  background-color: var(--shape-background);
+}
+
+#page {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 20px;
+}
+
+.container-asset {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  padding: 1.25rem;
+  
+
+  & img {
+    width: inherit;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+  }
+
+  & .logo-box {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    top: 48px;
+    left: 48px;
+
+    & > img {
+      width: 2.8125rem;
+      height: 3rem;
+    }
+
+    & h1 {
+      margin-top: 1rem;
+      font: var(--logo);
+      color: var(--pink);
+    }
+
+    & p {
+      color: var(--text-heading);
+      font: var(--body-md)
+    }
+  }
+}
+
+div .container-form {
+  max-width: 820px;
+  border-radius: 12px;
+  background-color: var(--shape-body);
+  margin: 20px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  padding: 5rem 8.125rem;
+
+  & h2 {
+    font: var(--heading-md);
+    color: var(--text-heading)
+  }
+}
+
+.container-event {
+  & > span {
+    margin-top: 2.5rem;
+
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    & h3 {
+      font: var(--heading-sm);
+      color: var(--text-heading);
+    }
+  }
+}
+
+.form-wrapper {
+  margin-top: 1.5rem;
+  width: 35rem;
+
+  .input-wrapper {
+    
+    .firstDate,
+    .secondDate {
+      width: 50%;
+    }
+  }
+}
+
+.input-wrapper-radio {
+
+  .input-wrapper-content {
+    width: 50%;
+  }
+
+  .typeMeeting {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--input-base);
+    border-radius: 0.5rem;
+    border: 1px solid var(--input-stroke);
+
+    .presential-wrapper,
+    .online-wrapper {
+      width: 50%;
+      justify-content: center;
+    }
+
+    & img {
+      width: 1rem;
+      height: 1rem;
+    }
+
+    & .presential-wrapper label {
+      transition: hover 300ms ease;
+    }
+  }
+
+  .input-wrapper-local {
+    width: 50%;
+  }
+}
+
+.presential-wrapper,
+.online-wrapper {
+  position: relative;
+  margin: 4px;
+
+  & input[type="radio"]{
+    position: absolute;
+    inset: 0;
+    border-radius: 5px;
+    z-index: 1;
+  }
+}
+
+.presential-wrapper img,
+.presential-wrapper label,
+.online-wrapper img,
+.online-wrapper label{
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.container-personalization {
+
+
+  & > span {
+
+    & img {
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+  }
+}
