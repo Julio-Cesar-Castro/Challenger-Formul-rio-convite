@@ -68,7 +68,7 @@ input[type="color"]::-webkit-color-swatch {
 	border: none;
 }
 
-input[type="checkbox"]{
+.check-style{
   all: unset;
   border: var(--input-stroke) solid 1px;
   width: 4rem;
@@ -105,6 +105,24 @@ input[type="checkbox"]{
       right: 4px;
       bottom: 4px;
     }
+  }
+}
+
+.check-terms {
+  all: unset;
+  border: var(--input-stroke) solid 1px;
+  border-radius: 0.25rem;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-color: var(--input-base);
+  position: relative;
+  cursor: pointer;
+  transition: background-color .5s 50ms ease-in-out;
+
+  &:checked{
+    background: url(../assets/icons/check.svg) center no-repeat;
+    background-size: 1rem 1rem;
+    outline: 1px solid var(--brand-ligh);
   }
 }
 

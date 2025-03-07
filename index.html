@@ -195,7 +195,7 @@
                 <div class="flex column gap-12">
                   <label for="checkbox" class="label-style">Estilo</label>
                   <div class="flex align-center justify-center gap-12">
-                    <input name="checkbox" id="checkbox" type="checkbox">
+                    <input class="check-style" name="checkbox" id="checkbox" type="checkbox">
                     <span>Escuro</span>
                   </div>
                 </div>
@@ -215,7 +215,68 @@
                 </div>
               </div>
             </div>
+
           </div>
+
+          <div class="container-contact-data">
+            <span class="flex align-center gap-12">
+              <img src="assets/icons/contact.svg" alt="">
+              <h3>Dados para contato</h3>
+            </span>
+
+            <div class="input-wrapper flex column gap-8">
+              <label class="label-style" for="name">Nome</label>
+              <input class="input-style" ="text" name="name" id="name" placeholder="Nome completo">
+            </div>
+
+            <div class="input-wrapper flex gap-16">
+              <div class="email flex column gap-12">
+                <label for="email" class="label-style">E-mail</label>
+                <input 
+                  type="text" 
+                  name="email" 
+                  id="email" 
+                  placeholder="exemplo@email.com"
+                  class="input-style"
+                >
+              </div>
+
+              <div class="phone flex column gap-12">
+                <label for="phone" class="label-style">Telefone</label>
+                <input 
+                  type="text" 
+                  name="phone" 
+                  id="phone" 
+                  placeholder="(99) 99999-9999"
+                  class="input-style"
+                >
+              </div>
+            </div>
+            
+          </div>
+
+          <footer class="flex column">
+            <div class="terms">
+              <input class="check-terms" type="checkbox" name="read-terms" id="read-terms">
+              <label for="read-terms">Li e concordo com os <span>Termos e Condições</span> e com a <span>Política de Privacidade</span>
+              </label>
+            </div>
+            <div class="terms">
+              <input class="check-terms" type="checkbox" name="email-terms" id="email-terms">
+              <label for="email-terms">Aceito receber atualizações e promoções por e-mail</label>
+            </div>
+            <div class="terms">
+              <input class="check-terms" type="checkbox" name="sms-terms" id="sms-terms">
+              <label for="sms-terms">Aceito receber atualizações e promoções por SMS</label>
+            </div>
+            <div class="btn-container">
+              <button type="sumit">
+                <img src="assets/icons/ticket.svg" alt="">
+                Gerar convite
+              </button>
+            </div>
+          </footer>
+
         </form>
     </div>
 
